@@ -1,0 +1,225 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header
+{
+    
+    background-color: #4eeb26;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  z-index: 1;      
+}
+
+
+header h1
+{
+    color: white;
+    /* border: 8px solid white;
+     display:inline-block;  */
+    padding: 6px 12px;
+    /*  border-radius: 36px;  */
+}
+
+/* banner */
+
+ .banner
+ { 
+    position: relative;
+    margin-top: 7%;
+
+ }
+ /* styling the banner image */
+ .banner img
+ {
+     width: 100%; 
+ } 
+ /* here we provided a welcome class and a text in it */
+
+ .banner .welcome{
+    
+    color: rgb(7, 21, 26);
+    padding: 30px;
+    font-size: 60px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    background-color: rgba(231, 82, 199, 0.137);
+  }
+
+  /* span font size is inisilation */
+  .banner .welcome span{
+    font-size: 1.3em;
+  }
+
+  /* nav bar's property */
+
+  nav
+  {
+    background-color: #cac2c2f4;
+    padding: 20px;
+    position: sticky;
+    top:127px;
+    z-index: 1;
+  }
+  /* here we provide some webpage max width and some margins */
+  nav ul
+  {
+    white-space:nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;    
+
+  }
+  /* here we aline the list in landscap style */
+  nav li 
+  {
+    width: 25%;
+    display: inline-block;
+    font-size: 25px;
+  }
+  /* the text chanced its color to grey  */
+  nav li a
+  {
+    text-decoration:none;
+    color:#4b4b4b
+    
+  }
+  /* pseudo hover effect */
+
+  nav li a:hover
+  {
+    text-decoration: underline;
+  }
+  
+
+  /* setting the color of class join to red shade */
+  nav li a.join
+  {
+    color: #f63232;
+    display: inline-block;
+  }
+
+  /* main layout is styled */
+  main
+  {
+    max-width: 100%;
+    width: 1200px;
+    margin:80px auto;
+    padding:0 40px;
+    box-sizing: border-box;
+    /* background-color: #00ffff48; */
+  }
+
+/* artical is ready for style */
+article
+{
+  text-align: center;
+ 
+}
+
+article h2
+{
+  color: #35eb07c4;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+article p
+{
+  line-height: 2em;
+  color: black; 
+  font-size: 25px ;
+}
+/* pesudo element giving some style in the first line of para */
+
+article p::first-line
+{
+  font-size: 1.3em;
+}
+/* image properties */
+.image 
+{
+  text-align: center;
+  margin: 40px 0;
+  white-space: nowrap;
+}
+
+ .image  li
+{
+  display:inline-block;  /*here our image will comes in a grid formate*/
+  list-style: none;
+  width: 350px;
+  margin: 15px 7px;
+  position: relative;
+
+} 
+/* hover effect in imsge */
+.image li:hover
+{
+  top: -5px;
+}
+
+.image li img
+{
+  max-width: 100%;
+}
+/* section join  */
+section.join
+{
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 60px 20px;
+  color:#4b4b4b;
+}
+section h2
+{
+  font-size: 36px;
+}
+section p
+{
+  line-height: 25px;
+  text-align: center;
+}
+/* email  section */
+form input
+{
+ margin: 20px 0;
+ font-size: 24px;
+ border-radius: 28px;
+ border: 4px solid white;
+}
+
+/* pseudo focus class */
+form input:focus
+{
+  border: 4px dashed #4b4b4b;
+  outline: none;
+}
+
+/* pseudo valid class */
+form input:valid
+{
+  border: 4px solid #4eeb26;
+}
+
+/* footer */
+footer
+{
+  background:#84eb24;
+  color:white;
+  padding:10px;
+  text-align: center;
+}
+footer:hover
+{
+  text-decoration:line-through;
+}
+
