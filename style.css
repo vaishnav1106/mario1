@@ -22,8 +22,8 @@ header
 header h1
 {
     color: white;
-    /* border: 8px solid white;
-     display:inline-block;  */
+    border: 8px solid white;
+     display:inline-block; 
     padding: 6px 12px;
     /*  border-radius: 36px;  */
 }
@@ -148,7 +148,7 @@ article p::first-line
 .image 
 {
   text-align: center;
-  margin: 40px 0;
+  margin: 80px 0;
   white-space: nowrap;
 }
 
@@ -157,14 +157,14 @@ article p::first-line
   display:inline-block;  /*here our image will comes in a grid formate*/
   list-style: none;
   width: 350px;
-  margin: 15px 7px;
+  margin: 20px 5px;
   position: relative;
 
 } 
 /* hover effect in imsge */
 .image li:hover
 {
-  top: -5px;
+  top: -4px;
 }
 
 .image li img
@@ -223,3 +223,108 @@ footer:hover
   text-decoration:line-through;
 }
 
+/* media query  max screen 1200px*/
+
+@media screen and (max-with:1200px)
+{
+   .banner .welcome
+   {
+    font-size: 40px;
+   }
+  
+}
+/* media query  max screen 960px*/
+@media screen and (max-with:960px)
+{
+   .banner .welcome
+   {
+    font-size: 28px;
+   }
+   nav li
+   {
+    font-size: 18px;
+   }
+}   
+  /* media query  max screen 700px*/
+  @media screen and (max-width: 1400px){
+
+    .banner .welcome{
+      font-size: 40px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 960px){
+  
+    .banner .welcome{
+      font-size: 28px;
+    }
+    nav li{
+      font-size: 18px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 800px){
+  
+    .banner .welcome{
+      font-size: 20px;
+      position: relative;
+      text-align: center;
+    }
+    .banner .welcome br{
+      display: none;
+    }
+    .banner .welcome span{
+      font-size: 1em;
+    }
+    nav li{
+      font-size: 18px;
+    }
+    .images li{
+      width: 20%;
+      display: block;
+      margin: 10px auto;
+    }
+    .image li img
+    {
+      width:auto;
+    }  
+  }
+  
+  @media screen and (max-width: 560px){
+  
+    .banner .welcome{
+      font-size: 20px;
+      position: relative;
+      text-align: center;
+    }
+    .banner .welcome br{
+      display: none;
+    }
+    .banner .welcome span{
+      font-size: 1em;
+    }
+    nav li{
+      display: block;
+      width: 100%;
+      margin: 12px 0;
+    }
+    article h2{
+      font-size: 36px;
+    }
+    header, nav{
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  
+  .images li img{
+    width: 20%;
+    display: block;
+    margin: 20px auto;
+    
+  }
+    
+  
+  }
