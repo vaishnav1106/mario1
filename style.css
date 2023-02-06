@@ -250,6 +250,7 @@ footer:hover
 
     .banner .welcome{
       font-size: 40px;
+      width: 50%;
     }
   
   }
@@ -274,6 +275,7 @@ footer:hover
     }
     .banner .welcome br{
       display: none;
+      width: 49%;
     }
     .banner .welcome span{
       font-size: 1em;
